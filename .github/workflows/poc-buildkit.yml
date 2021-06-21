@@ -42,6 +42,7 @@ jobs:
           DOCKER_BUILDKIT: 1
         with:
           push: false
+          load: true
           tags: valentijn/app:latest
           builder: ${{ steps.buildx.outputs.name }}
           file: ./Dockerfile
